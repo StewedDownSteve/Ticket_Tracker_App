@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <title>Ticket Tracker App</title>
+    <title>Mega Ticket Tracker</title>
 </head>
 <body onload="fetchIssues()">
 
     <section class="container">
-        <h1>Ticket Tracker Extreme</h1>
+        <h1>The lil' Ticket Tracker</h1>
         <section class="jumbotron">
             <h3>Add New Issue:</h3>
             <form id="issueInputForm">
@@ -18,7 +19,7 @@
                     <input type="text" class="form-control" id="issueSubjInput" placeholder="Issue Subject...">
                 </div>
                 <div class="form-group">
-                    <label for="issueSubjInput">Description</label>
+                    <label for="issueDescInput">Description</label>
                     <input type="text" class="form-control" id="issueDescInput" placeholder="Issue Description...">
                 </div>
                 <div class="form-group">
@@ -26,11 +27,11 @@
                     <select class="form-control" id="issueSeverityInput">
                         <option value="Low">Low</option>
                         <option value="Medium">Medium</option>
-                        <option value="High">High</option>
+                        <option value="High" selected>High</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="issueAssignedToInput">Assinged To</label>
+                    <label for="issueAssignedToInput">Assigned To</label>
                     <input type="text" class="form-control" id="issueAssignedToInput" placeholder="Enter Person Responsible...">
                 </div>
                 <button type="submit" class="btn btn-warning">Add</button>
@@ -39,7 +40,7 @@
         <section class="row">
             <div class="col-lg-12">
                 <div id="issuesList">
-                    <!-- This wil be populated by JavaScript <3 -->
+                    <!--This will be populated by JS-->
                 </div>
             </div>
         </section>
@@ -47,11 +48,9 @@
 
 
 
-
-
     <script src="main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="http://chancejs.com/chance.min.js"></script>  
+    <script src="http://chancejs.com/chance.min.js"></script>
 </body>
 </html>

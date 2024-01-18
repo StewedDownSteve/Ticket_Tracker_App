@@ -1,6 +1,6 @@
-document.getElementById('issueInputForm').addEventListener('submit', saveIssue)
+document.getElementById('issueInputForm').addEventListener('submit',saveIssue)
 
-function fetchIssues () {
+function fetchIssues() {
     let issues = JSON.parse(localStorage.getItem('issues'))
     let issuesList = document.getElementById('issuesList')
     console.log(issues)
@@ -14,7 +14,7 @@ function fetchIssues () {
         let severity = issues[i].severity
         let assignedTo = issues[i].assignedTo
         let status = issues[i].status
-        let statusColor = status == "Closed" ? 'lavel-success' : 'label-info'
+        let statusColor = status == "Closed" ? 'label-success' : 'label-info'
 
         issuesList.innerHTML += 
         '<div class="well">' +
@@ -61,4 +61,31 @@ function saveIssue(e) {
     fetchIssues()
 
     e.preventDefault()
+}
+
+function setStatusClosed(id) {
+    let issues = JSON.parse(localStorage.getItem('issues'))
+    for(let i=0; i < issues.length; i++) {
+        if(issues[i].id === id) {
+            issues[i].status = "Closed"
+        }
+    }
+
+    localStorage.setItem('issues', JSON.stringify(issues))
+
+    fetchIssues()
+}
+
+function deleteIssue (id) {
+    let issues = JSON.parse(localStorage.getItem('issues'))
+    for(let i=0; i < issues.length; i++) {
+        if(issues[i].id === id) {
+            issues.splice(i,1)
+        }
+    }
+
+    localStorage.setItem('issues', JSON.stringify(issues))
+
+    fetchIssues()
+
 }
