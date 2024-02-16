@@ -18,3 +18,8 @@ Welcome to the Ticket Tracker Prototype repository! This project was all about c
 
 ## Future Plans:
 This prototype is the first step towards developing a robust full-stack ticket tracking application. Future enhancements will include server-side functionalities, user authentication, and expanded collaboration features.
+
+
+## Update:
+Take a look at the full-stack remake of this prototype:
+**Ticket Tracker Full Stack:** https://github.com/StewedDownSteve/TicketTrackerFullStack
