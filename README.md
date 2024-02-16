@@ -1,9 +1,10 @@
 # Ticket_Tracker_App
-Welcome to the Ticket Tracker Prototype repository! This project was all about creating a working prototype, showcasing the implementation of a simple ticket-tracking system using HTML, CSS, and JavaScript, with data persistence achieved through local storage. This prototype lays the foundation for a future full-stack application, where additional features and functionalities will be incorporated.
+Welcome to the Ticket Tracker Prototype repository! This project was all about creating a working prototype, showcasing the implementation of a simple ticket-tracking system using HTML, Bootstrap, and JavaScript, with data persistence achieved through local storage. This prototype lays the foundation for a future full-stack application, where additional features and functionalities will be incorporated.
 
+![photo]([https://github.com/StewedDownSteve/TicketTrackerFullStack/blob/main/TicketTrackFT_Img.png](https://github.com/StewedDownSteve/Ticket_Tracker_App/blob/main/Ticket_Tracker_Proto_img.png))
 ## How It's Made:
 
-**Tech used:** HTML, CSS, Javascript, Local Storage
+**Tech used:** HTML, Bootstrap, Javascript, Local Storage
 
 ## Features:
 
